@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Introductory Letter</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- custom css -->
+        <link rel="stylesheet" href="style.css">
+       
+
+        
+    </head>
+    <body>
+        <nav class = "navbar bg-white">
+            <div class="container">
+                <div class = "navbar-content">
+                    <div class = "brand-and-toggler">
+                        <a href = "index.html" class = "navbar-brand">
+                            <img src = "assets/introductry_icon.png" alt = "" class = "navbar-brand-icon">
+                            <span class = "navbar-brand-text"> B2B <span> Introductory letter</span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id = "about-sc" class = "">
+            <div class = "container">
+                <div class = "about-cnt">
+                    <form action="" class="cv-form" id = "cv-form">
+                        <div class = "cv-form-blk">
+                            
+                            <div class = "cv-form-row cv-form-row-about">
+                                <div class="headings123">
+                                    <h1>Sender's Details</h1>
+                                 <hr>
+                                 <hr>
+                                </div>
+                                
+                                <div class = "cols-3">
+                                    
+                                    
+                                    <div class = "form-elem">
+                                        <label for = "" class = "form-label">Sender's Name</label>
+                                        <input name = "sname" type = "text" class = "form-control firstname" id = "sname"  placeholder="e.g. Yogesh">
+                                        <span class="form-text"></span>
+                                    </div>
+                                    <div class = "form-elem">
+                                        <label for = "" class = "form-label">Sender's Company Name </label>
+                                        <input name = "scname" type = "text" class = "form-control middlename" id = "scname"  placeholder="e.g. tata">
+                                        <span class="form-text"></span>
+                                    </div>
+                                    <div class = "form-elem">
+                                        <label for = "" class = "form-label">Sender's Address</label>
+                                        <input name = "sadd" type = "text" class = "form-control lastname" id = "saddr"  placeholder="e.g. h.no=12,mirage colony,Bombay">
+                                        <span class="form-text"></span>
+                                    </div>
+
+                                    <div class = "form-elem">
+                                        <label for = "" class = "form-label">Position</label>
+                                        <input name = "designation" type = "text" class = "form-control designation" id = "pname"  placeholder="e.g. Sr.Accountants">
+                                        <span class="form-text"></span>
+                                    </div>
+                                    
+                                   
+                                </div>
+                            </div>
+
+                            <div class = "cv-form-row cv-form-row-about">
+                                    <div class="headings123">
+                                        <h1>Reciver's Details</h1>
+                                     <hr>
+                                     <hr>
+                                    </div>
+                                    
+                                    <div class = "cols-3">
+
+                                        <div class = "form-elem">
+                                            <label for="dropdown" class = "form-label">Select for Mr./Mrs:</label>
+                                              <select id="dropdown" class = "form-label">
+                                                <option value="option1" >Mr.</option>
+                                                <option value="option2" >Mrs.</option>
+                                                <option value="option3" >Miss.</option>
+                                              </select>
+                                        </div>
+                                        
+                                        
+                                        <div class = "form-elem">
+                                            <label for = "" class = "form-label">Reciver's First Name</label>
+                                            <input name = "rname" type = "text" class = "form-control rfirstname" id = "rfname"  placeholder="e.g. Yogesh">
+                                            <span class="form-text"></span>
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for = "" class = "form-label">Reciver's Last Name </label>
+                                            <input name = "rlname" type = "text" class = "form-control rlastname" id = "rlname"  placeholder="e.g. sen">
+                                            <span class="form-text"></span>
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for = "" class = "form-label">Reciver's Address</label>
+                                            <input name = "radd" type = "text" class = "form-control raddress" id = "raddr"  placeholder="e.g. h.no=12,mirage colony,Bombay">
+                                            <span class="form-text"></span>
+                                        </div>
+    
+                                        <div class = "form-elem">
+                                            <label for = "" class = "form-label">Reciver's Company Name</label>
+                                            <input name = "rcompany" type = "text" class = "form-control rcompany" id = "rcname"  placeholder="e.g. tata">
+                                            <span class="form-text"></span>
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+
+                                <div class = "cols-3">
+                                    
+                                    <div class = "form-elem">
+                                        <label for = "" class = "form-label"> Date </label>
+                                        <input name = "date" type = "date" class = "form-control lastdate" id = "ldate"  placeholder="e.g. Doe">
+                                        <span class="form-text"></span>
+                                    </div>
+                                </div>
+
+                                
+                                    <button id="bttn" onclick="generateIntroLetter()"> Create </button>
+                                  
+
+                    
+                            
+                            
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section id="rewe">
+        <div class="tube text-center" id="letterContainer"> 
+            
+            
+
+        </div>
+        </section>
+
+        
+
+
+
+
+
+       
+       <section class="print-btn-sc">
+            <div class="container">
+              <div class="btn-group" role="group">
+                <button type="button" class="print-btn btn btn-primary" onclick=" downloadPDF()">Download</button>
+               
+              </div>
+            </div>
+          </section>
+          
+
+        
+
+    
+
+        
+        
+
+
+
+
+     
+
+     <script>
+        function generateIntroLetter() {
+            event.preventDefault();
+      // Get the user input from the text field
+       
+      let SenderName=document.getElementById("sname").value;
+      let SenderComp=document.getElementById("scname").value;
+      let SenderAdd=document.getElementById("saddr").value;
+      let SenderPos=document.getElementById("pname").value;
+      
+      
+      
+      let Dat=document.getElementById("ldate").value;
+      
+      let RecieverComp=document.getElementById("rcname").value;
+      let RecieverFName=document.getElementById("rfname").value;
+      let RecieverLName=document.getElementById("rlname").value;
+      let RecieverAdd=document.getElementById("raddr").value;
+      let RecieverTitl=document.getElementById("dropdown");
+      var selectedOption = dropdown.options[dropdown.selectedIndex].text;
+
+
+      // Get the letter container element
+      var letterContainer = document.getElementById("letterContainer");
+
+      // Create the introductory letter with the user input
+      var introLetter = " Date: " + Dat + "<br><br>Respected "+" "+ selectedOption +" "+ RecieverFName +" "+ RecieverLName +"<br>"+ RecieverComp +"<br>"+ RecieverAdd+"<br><br> Dear"+" "+ RecieverFName +","+"<br><br> I hope this letter finds you well. I am writing to introduce "+ SenderComp + " , a software company specializing in providing innovative solutions for businesses like yours.<br> <br> At "+ SenderComp +", we understand the challenges faced by businesses in today's competitive landscape. That's why we have developed a range of software solutions designed to help businesses streamline their operations, improve efficiency, and drive growth.<br><br>Our team of experienced professionals is dedicated to developing cutting-edge software that caters to the unique needs of our clients. We offer custom software development services, business process automation solutions, data analytics and business intelligence tools, and cloud computing services.<br><br>We take pride in delivering high-quality solutions that are tailored to meet your specific requirements. By leveraging our software solutions, you can optimize your workflows, make data-driven decisions, and embrace the scalability and flexibility of the cloud.<br><br><br>Thank you for considering "+ SenderComp +" as your software partner. We look forward to the opportunity to work with you and contribute to your business success.<br><br><br>"+SenderName+"<br>"+SenderPos+"<br>"+SenderComp;   
+      
+      // Set the HTML content of the letter container to the intro letter
+      letterContainer.innerHTML = introLetter;
+     }
+     </script>
+
+
+     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <!-- jquery repeater cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js" integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- custom js -->
+        <script src = "assets/js/resume.js"></script>
+        <!-- app js -->
+        <script src="assets/js/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+
+     <script>
+          function downloadPDF() {
+            const element = document.getElementById('rewe');
+            const opt = {
+              margin: 0,
+              filename: 'offer_letter.pdf',
+              image: { type: 'jpeg', quality: 0.98 },
+              html2canvas: { scale: 2 },
+              jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+            html2pdf().set(opt).from(element).save();
+          }
+     </script>
+
+
+
+
+
+
+  
+  
+       
+    </body>
+</html>
